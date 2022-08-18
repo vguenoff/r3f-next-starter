@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import styles from '@/styles/two.module.scss'
 
 const Box = dynamic(() => import('@/components/canvas/Box'), {
     ssr: false,
@@ -18,16 +19,7 @@ const R3F = () => {
 // DOM elements here
 const DOM = () => {
     return (
-        <div
-            style={{
-                width: '100%',
-                display: 'flex',
-                alignContent: 'center',
-                justifyContent: 'center',
-                height: '100vh',
-                flexDirection: 'column',
-            }}
-        >
+        <div className={styles.two}>
             <h1>Combine your DOM and 3D</h1>
         </div>
     )

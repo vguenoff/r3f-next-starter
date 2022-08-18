@@ -1,0 +1,12 @@
+.two {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+
+    h1 {
+        font-size: 45px;
+    }
+}
