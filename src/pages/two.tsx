@@ -1,7 +1,19 @@
 import dynamic from 'next/dynamic'
+
 const Box = dynamic(() => import('@/components/canvas/Box'), {
     ssr: false,
 })
+
+// Canvas/R3F components here
+const R3F = () => {
+    return (
+        <>
+            <gridHelper />
+            <axesHelper />
+            <Box route="/" />
+        </>
+    )
+}
 
 // DOM elements here
 const DOM = () => {
@@ -18,17 +30,6 @@ const DOM = () => {
         >
             <h1>Combine your DOM and 3D</h1>
         </div>
-    )
-}
-
-// Canvas/R3F components here
-const R3F = () => {
-    return (
-        <>
-            <gridHelper />
-            <axesHelper />
-            <Box route="/" />
-        </>
     )
 }
 

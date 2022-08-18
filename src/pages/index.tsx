@@ -1,6 +1,5 @@
-import useStore from '@/helpers/store'
 import dynamic from 'next/dynamic'
-import { useRouter } from 'next/router'
+import useStore from '@/helpers/store'
 // import Shader from '@/components/canvas/ShaderExample/ShaderExample'
 
 // Prefer dynamic import for production builds
@@ -14,25 +13,19 @@ const Shader = dynamic(
     },
 )
 
-// DOM elements here
-const DOM = () => {
-    return <></>
-}
-
 // Canvas/R3F components here
 const R3F = () => {
     // Example of using the router to change pages
     // It can also be inside R3F component (see `two.tsx` and `Box.tsx`)
     const { router } = useStore()
-    const handleOnClick = () => {
-        router.push('/two')
-    }
+    const handleOnClick = () => router.push('/two')
 
-    return (
-        <>
-            <Shader onClick={handleOnClick} />
-        </>
-    )
+    return <Shader onClick={handleOnClick} />
+}
+
+// DOM elements here
+const DOM = () => {
+    return <>hi</>
 }
 
 export default function Page() {

@@ -21,10 +21,10 @@ const nextConfig = {
 
     // Internationalized Routing
     // @see: https://nextjs.org/docs/advanced-features/i18n-routing
-    i18n: {
-        locales: ['en-US'],
-        defaultLocale: 'en-US',
-    },
+    // i18n: {
+    //     locales: ['en-US'],
+    //     defaultLocale: 'en-US',
+    // },
 }
 
 module.exports = plugins(

@@ -19,7 +19,7 @@ const CanvasWrapper = ({ children }) => {
                     top: 0,
                 }}
             >
-                <Stats />
+                <Stats className="stats" />
                 <Controls />
                 <Preload all />
                 {children}

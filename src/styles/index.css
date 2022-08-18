@@ -390,3 +390,8 @@ body,
     padding: 0;
     overflow: hidden;
 }
+
+.stats {
+    left: auto !important;
+    right: 0 !important;
+}
